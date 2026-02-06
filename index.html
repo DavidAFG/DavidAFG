@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monterrey Pollution</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #0f0f0f;
+    color: #eaeaea;
+    font-family: system-ui, sans-serif;
+  }
+
+  .container {
+    padding: 8px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  h2 {
+    margin: 4px 0 8px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  figure {
+    margin: 0;
+    background: #1a1a1a;
+    padding: 4px;
+    border-radius: 6px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 2px;
+    opacity: 0.9;
+  }
+
+  .full {
+    grid-column: span 2;
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h2>Monterrey — Monthly Pollution Concentrations</h2>
+    <figure>
+      <img src="mty_monthly_NOx.gif">
+      <figcaption>NOₓ</figcaption>
+    </figure>
+
+    <figure>
+      <img src="mty_monthly_PM25.gif">
+      <figcaption>PM2.5</figcaption>
+    </figure>
+
+    <figure>
+      <img src="mty_monthly_PM10.gif">
+      <figcaption>PM10</figcaption>
+    </figure>
+
+    <figure class="full">
+      <img src="mty_monthly_CO.gif">
+      <figcaption>CO</figcaption>
+    </figure>
+  </div>
+</div>
+</body>
+</html>
